@@ -12,7 +12,7 @@ UNKNOWN  = 3
 
 cmd_df = """ORACLE_HOME=/usr/lib/oracle/18.3/client64; PATH=$ORACLE_HOME/bin:$PATH;
  LD_LIBRARY_PATH=$ORACLE_HOME/lib; export ORACLE_HOME; export LD_LIBRARY_PATH; export PATH;
- cat /$(pwd)/sqlplus.sq | 
+ cat sqlplus.sq | 
  sqlplus "system/password123@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.90.163)(PORT=1521))
  (CONNECT_DATA=(SID=ORCL)))" """
 
